@@ -11,7 +11,7 @@ app.get('/', (req,res)=>{
 app.get('/addTwoNumbers',(req,res)=>{
     //let payLoad = {}
     let statusCode = 200;
-    let sucessMesssage = 'successful';
+    let sucessMesssage = 'Success';
     let number1 = req.query.number1; // 99
     let number2 = req.query.number2; // 40
     let result = parseInt(number1) + parseInt(number2); // convert them to int
@@ -24,5 +24,5 @@ app.get('/addTwoNumbers',(req,res)=>{
 });
 
 app.listen(port, () => {
-    console.log('server started');
+    console.log('server started on port 3000');
 });
